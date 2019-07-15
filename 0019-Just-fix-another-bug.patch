@@ -1,0 +1,19 @@
+From c9067525b06b216873191c8184a755efc9f3b04e Mon Sep 17 00:00:00 2001
+From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
+Date: Fri, 12 Jul 2019 15:30:24 +0800
+Subject: [PATCH 19/20] Just fix another bug
+
+---
+ file8 | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/file8 b/file8
+index 20fd283..e7c1461 100644
+--- a/file8
++++ b/file8
+@@ -1 +1,2 @@
+ in newbranch .. hihi
++This is a bad idea.
+-- 
+2.19.1
+

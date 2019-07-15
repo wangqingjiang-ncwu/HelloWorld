@@ -1,0 +1,27 @@
+From 604e89a69627373a880b9a4be77afef24908abf2 Mon Sep 17 00:00:00 2001
+From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
+Date: Fri, 12 Jul 2019 10:58:03 +0800
+Subject: [PATCH 16/20] =?UTF-8?q?Revert=20"Revert=20"=20=E8=A6=81=E6=8F=90?=
+ =?UTF-8?q?=E4=BA=A4=E7=9A=84=E5=8F=98=E6=9B=B4=EF=BC=9A""?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+This reverts commit 0705d8bba0dc7904c0e325c70444378dc42fc226.
+
+ 要提交的变更：
+	重命名：   file8 -> mmess/file8
+
+	重命名：   file8 -> mmess/file8
+---
+ file8 => mmess/file8 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename file8 => mmess/file8 (100%)
+
+diff --git a/file8 b/mmess/file8
+similarity index 100%
+rename from file8
+rename to mmess/file8
+-- 
+2.19.1
+

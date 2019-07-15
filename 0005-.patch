@@ -1,0 +1,32 @@
+From 9e531661f3abb248494ffbd707eaddda65bc3a27 Mon Sep 17 00:00:00 2001
+From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
+Date: Fri, 5 Jul 2019 09:53:10 +0800
+Subject: [PATCH 05/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
+ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20?=
+ =?UTF-8?q?=20=20=20=20file2=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20=20=20=20?=
+ =?UTF-8?q?=20fs/file6?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ file2    | 1 +
+ fs/file6 | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/file2 b/file2
+index e69de29..9f87a09 100644
+--- a/file2
++++ b/file2
+@@ -0,0 +1 @@
++wqj
+diff --git a/fs/file6 b/fs/file6
+index 8b13789..9f87a09 100644
+--- a/fs/file6
++++ b/fs/file6
+@@ -1 +1 @@
+-
++wqj
+-- 
+2.19.1
+

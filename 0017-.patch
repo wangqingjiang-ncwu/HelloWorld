@@ -1,0 +1,25 @@
+From d8844d5368835da14865c1be793ae42692602599 Mon Sep 17 00:00:00 2001
+From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
+Date: Fri, 12 Jul 2019 11:10:55 +0800
+Subject: [PATCH 17/20] =?UTF-8?q?=20=E5=B0=9A=E6=9C=AA=E6=9A=82=E5=AD=98?=
+ =?UTF-8?q?=E4=BB=A5=E5=A4=87=E6=8F=90=E4=BA=A4=E7=9A=84=E5=8F=98=E6=9B=B4?=
+ =?UTF-8?q?=EF=BC=9A=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20=20=20=20=20file8?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ file8 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file8
+
+diff --git a/file8 b/file8
+new file mode 100644
+index 0000000..20fd283
+--- /dev/null
++++ b/file8
+@@ -0,0 +1 @@
++in newbranch .. hihi
+-- 
+2.19.1
+
