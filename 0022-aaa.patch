@@ -1,0 +1,23 @@
+From 01a482e384d0e4456279987b786005f9a694d99f Mon Sep 17 00:00:00 2001
+From: wangqingjiang-ncwu
+ <49704564+wangqingjiang-ncwu@users.noreply.github.com>
+Date: Fri, 12 Jul 2019 17:13:04 +0800
+Subject: [PATCH 22/24] aaa
+
+adasdasd
+---
+ file5 | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/file5 b/file5
+index 5a5560e..51c111b 100644
+--- a/file5
++++ b/file5
+@@ -1,2 +1,4 @@
+ 
+ I am try to add some changes.
++
++add another line.
+-- 
+2.19.1
+

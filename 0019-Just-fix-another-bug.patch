@@ -1,7 +1,7 @@
 From c9067525b06b216873191c8184a755efc9f3b04e Mon Sep 17 00:00:00 2001
 From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
 Date: Fri, 12 Jul 2019 15:30:24 +0800
-Subject: [PATCH 19/20] Just fix another bug
+Subject: [PATCH 19/24] Just fix another bug
 
 ---
  file8 | 1 +

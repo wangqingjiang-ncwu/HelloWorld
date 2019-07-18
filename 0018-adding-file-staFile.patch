@@ -1,7 +1,7 @@
 From df5b8b48185af134e7ce92fb7fe071390c87900b Mon Sep 17 00:00:00 2001
 From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
 Date: Fri, 12 Jul 2019 15:22:19 +0800
-Subject: [PATCH 18/20] adding file staFile
+Subject: [PATCH 18/24] adding file staFile
 
 ---
  staFile | 0

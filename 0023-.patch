@@ -1,0 +1,762 @@
+From 6c47d2572d9e3bdc5858bdb57fb821600948cc78 Mon Sep 17 00:00:00 2001
+From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
+Date: Mon, 15 Jul 2019 09:36:49 +0800
+Subject: [PATCH 23/24] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
+ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6?=
+ =?UTF-8?q?=EF=BC=9A=20=20=200001-newbranch.patch=20=09=E6=96=B0=E6=96=87?=
+ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=200002-newbranch.patch=20=09=E6=96=B0?=
+ =?UTF-8?q?=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200003-newbranch.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200004-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200005-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200006-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200007-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200008-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200009-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200010-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200011-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200012-.patch=20=09?=
+ =?UTF-8?q?=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200013-Revert.patch?=
+ =?UTF-8?q?=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200014-.patch?=
+ =?UTF-8?q?=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200015-Revert.?=
+ =?UTF-8?q?patch=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200016-Re?=
+ =?UTF-8?q?vert-Revert.patch=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20?=
+ =?UTF-8?q?=20=200017-.patch=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20?=
+ =?UTF-8?q?=20=200018-adding-file-staFile.patch=20=09=E6=96=B0=E6=96=87?=
+ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=200019-Just-fix-another-bug.patch=20?=
+ =?UTF-8?q?=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=200020-.patch?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ 0001-newbranch.patch            |  26 ++++++++
+ 0002-newbranch.patch            |  26 ++++++++
+ 0003-newbranch.patch            |  22 +++++++
+ 0004-.patch                     |  25 +++++++
+ 0005-.patch                     |  32 +++++++++
+ 0006-.patch                     |  21 ++++++
+ 0007-.patch                     | 113 ++++++++++++++++++++++++++++++++
+ 0008-.patch                     |  21 ++++++
+ 0009-.patch                     |  21 ++++++
+ 0010-.patch                     |  21 ++++++
+ 0011-.patch                     |  23 +++++++
+ 0012-.patch                     |  25 +++++++
+ 0013-Revert.patch               |  28 ++++++++
+ 0014-.patch                     |  22 +++++++
+ 0015-Revert.patch               |  25 +++++++
+ 0016-Revert-Revert.patch        |  27 ++++++++
+ 0017-.patch                     |  25 +++++++
+ 0018-adding-file-staFile.patch  |  16 +++++
+ 0019-Just-fix-another-bug.patch |  19 ++++++
+ 0020-.patch                     |  28 ++++++++
+ 20 files changed, 566 insertions(+)
+ create mode 100644 0001-newbranch.patch
+ create mode 100644 0002-newbranch.patch
+ create mode 100644 0003-newbranch.patch
+ create mode 100644 0004-.patch
+ create mode 100644 0005-.patch
+ create mode 100644 0006-.patch
+ create mode 100644 0007-.patch
+ create mode 100644 0008-.patch
+ create mode 100644 0009-.patch
+ create mode 100644 0010-.patch
+ create mode 100644 0011-.patch
+ create mode 100644 0012-.patch
+ create mode 100644 0013-Revert.patch
+ create mode 100644 0014-.patch
+ create mode 100644 0015-Revert.patch
+ create mode 100644 0016-Revert-Revert.patch
+ create mode 100644 0017-.patch
+ create mode 100644 0018-adding-file-staFile.patch
+ create mode 100644 0019-Just-fix-another-bug.patch
+ create mode 100644 0020-.patch
+
+diff --git a/0001-newbranch.patch b/0001-newbranch.patch
+new file mode 100644
+index 0000000..deeca12
+--- /dev/null
++++ b/0001-newbranch.patch
+@@ -0,0 +1,26 @@
++From a80e3e8d136dad5498b9a86797faea57a81a38f5 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Wed, 3 Jul 2019 21:53:32 +0800
++Subject: [PATCH 01/20] =?UTF-8?q?=20=E4=BD=8D=E4=BA=8E=E5=88=86=E6=94=AF?=
++ =?UTF-8?q?=20newbranch=20=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84=E5=8F=98?=
++ =?UTF-8?q?=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20?=
++ =?UTF-8?q?=20=20file1?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file1 | 1 +
++ 1 file changed, 1 insertion(+)
++ create mode 100644 file1
++
++diff --git a/file1 b/file1
++new file mode 100644
++index 0000000..8b13789
++--- /dev/null
+++++ b/file1
++@@ -0,0 +1 @@
+++
++-- 
++2.19.1
++
+diff --git a/0002-newbranch.patch b/0002-newbranch.patch
+new file mode 100644
+index 0000000..fe7825e
+--- /dev/null
++++ b/0002-newbranch.patch
+@@ -0,0 +1,26 @@
++From f74566b64db06ee7251ac92fb0cb8d8775d3beef Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 4 Jul 2019 09:04:12 +0800
++Subject: [PATCH 02/20] =?UTF-8?q?=20=E4=BD=8D=E4=BA=8E=E5=88=86=E6=94=AF?=
++ =?UTF-8?q?=20newbranch=20=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84=E5=8F=98?=
++ =?UTF-8?q?=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20?=
++ =?UTF-8?q?=20=20file3?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file3 | 1 +
++ 1 file changed, 1 insertion(+)
++ create mode 100644 file3
++
++diff --git a/file3 b/file3
++new file mode 100644
++index 0000000..8b13789
++--- /dev/null
+++++ b/file3
++@@ -0,0 +1 @@
+++
++-- 
++2.19.1
++
+diff --git a/0003-newbranch.patch b/0003-newbranch.patch
+new file mode 100644
+index 0000000..c80eacc
+--- /dev/null
++++ b/0003-newbranch.patch
+@@ -0,0 +1,22 @@
++From 3a0611fe4b1c933d924ce39b529da488a5b6918a Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 4 Jul 2019 21:43:58 +0800
++Subject: [PATCH 03/20] =?UTF-8?q?=20=E4=BD=8D=E4=BA=8E=E5=88=86=E6=94=AF?=
++ =?UTF-8?q?=20newbranch=20=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84=E5=8F=98?=
++ =?UTF-8?q?=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20?=
++ =?UTF-8?q?=20=20file2?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file2 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ create mode 100644 file2
++
++diff --git a/file2 b/file2
++new file mode 100644
++index 0000000..e69de29
++-- 
++2.19.1
++
+diff --git a/0004-.patch b/0004-.patch
+new file mode 100644
+index 0000000..f0e3c36
+--- /dev/null
++++ b/0004-.patch
+@@ -0,0 +1,25 @@
++From dcc6b7a0954c22e199b28b2b2c42aa70eb786638 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 5 Jul 2019 09:49:46 +0800
++Subject: [PATCH 04/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6?=
++ =?UTF-8?q?=EF=BC=9A=20=20=20fs/file6?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ fs/file6 | 1 +
++ 1 file changed, 1 insertion(+)
++ create mode 100644 fs/file6
++
++diff --git a/fs/file6 b/fs/file6
++new file mode 100644
++index 0000000..8b13789
++--- /dev/null
+++++ b/fs/file6
++@@ -0,0 +1 @@
+++
++-- 
++2.19.1
++
+diff --git a/0005-.patch b/0005-.patch
+new file mode 100644
+index 0000000..f194a62
+--- /dev/null
++++ b/0005-.patch
+@@ -0,0 +1,32 @@
++From 9e531661f3abb248494ffbd707eaddda65bc3a27 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 5 Jul 2019 09:53:10 +0800
++Subject: [PATCH 05/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20?=
++ =?UTF-8?q?=20=20=20=20file2=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20=20=20=20?=
++ =?UTF-8?q?=20fs/file6?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file2    | 1 +
++ fs/file6 | 2 +-
++ 2 files changed, 2 insertions(+), 1 deletion(-)
++
++diff --git a/file2 b/file2
++index e69de29..9f87a09 100644
++--- a/file2
+++++ b/file2
++@@ -0,0 +1 @@
+++wqj
++diff --git a/fs/file6 b/fs/file6
++index 8b13789..9f87a09 100644
++--- a/fs/file6
+++++ b/fs/file6
++@@ -1 +1 @@
++-
+++wqj
++-- 
++2.19.1
++
+diff --git a/0006-.patch b/0006-.patch
+new file mode 100644
+index 0000000..8391756
+--- /dev/null
++++ b/0006-.patch
+@@ -0,0 +1,21 @@
++From 3f5f8a7266f0a63d29a695933096c8eabbb495d6 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 11 Jul 2019 17:12:03 +0800
++Subject: [PATCH 06/20] =?UTF-8?q?=20=E6=9C=AA=E8=B7=9F=E8=B8=AA=E7=9A=84?=
++ =?UTF-8?q?=E6=96=87=E4=BB=B6:=20=090001-cBranch.patch=20README.md=20=09hf?=
++ =?UTF-8?q?ile1=20=09hfile2=20=09hfile3=20=09hfs/?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file8 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ create mode 100644 file8
++
++diff --git a/file8 b/file8
++new file mode 100644
++index 0000000..e69de29
++-- 
++2.19.1
++
+diff --git a/0007-.patch b/0007-.patch
+new file mode 100644
+index 0000000..e9e4dab
+--- /dev/null
++++ b/0007-.patch
+@@ -0,0 +1,113 @@
++From 84566a388a8bbbee50d072cd6e6504aa46eb1733 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 11 Jul 2019 17:12:50 +0800
++Subject: [PATCH 07/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6?=
++ =?UTF-8?q?=EF=BC=9A=20=20=200001-cBranch.patch=20=09=E6=96=B0=E6=96=87?=
++ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=20hREADME.md=20=09=E6=96=B0=E6=96=87?=
++ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=20hfile1=20=09=E6=96=B0=E6=96=87?=
++ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=20hfile2=20=09=E6=96=B0=E6=96=87?=
++ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=20hfile3=20=09=E6=96=B0=E6=96=87?=
++ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=20hfs/file6=20=09=E6=96=B0=E6=96=87?=
++ =?UTF-8?q?=E4=BB=B6=EF=BC=9A=20=20=20hfs/h.tar.gz?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ 0001-cBranch.patch | 26 ++++++++++++++++++++++++++
++ hREADME.md         |  8 ++++++++
++ hfile1             |  1 +
++ hfile2             |  1 +
++ hfile3             |  1 +
++ hfs/file6          |  1 +
++ hfs/h.tar.gz       |  0
++ 7 files changed, 38 insertions(+)
++ create mode 100644 0001-cBranch.patch
++ create mode 100644 hREADME.md
++ create mode 100644 hfile1
++ create mode 100644 hfile2
++ create mode 100644 hfile3
++ create mode 100644 hfs/file6
++ create mode 100644 hfs/h.tar.gz
++
++diff --git a/0001-cBranch.patch b/0001-cBranch.patch
++new file mode 100644
++index 0000000..e592cff
++--- /dev/null
+++++ b/0001-cBranch.patch
++@@ -0,0 +1,26 @@
+++From 493ddf24f8eaee916b455444bb2e257957992815 Mon Sep 17 00:00:00 2001
+++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
+++Date: Wed, 3 Jul 2019 22:19:29 +0800
+++Subject: [PATCH] =?UTF-8?q?=20=E4=BD=8D=E4=BA=8E=E5=88=86=E6=94=AF=20cBran?=
+++ =?UTF-8?q?ch=20=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84=E5=8F=98=E6=9B=B4?=
+++ =?UTF-8?q?=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6=EF=BC=9A=20=20=20fil?=
+++ =?UTF-8?q?e2?=
+++MIME-Version: 1.0
+++Content-Type: text/plain; charset=UTF-8
+++Content-Transfer-Encoding: 8bit
+++
+++---
+++ file2 | 1 +
+++ 1 file changed, 1 insertion(+)
+++ create mode 100644 file2
+++
+++diff --git a/file2 b/file2
+++new file mode 100644
+++index 0000000..8b13789
+++--- /dev/null
++++++ b/file2
+++@@ -0,0 +1 @@
++++
+++-- 
+++2.19.1
+++
++diff --git a/hREADME.md b/hREADME.md
++new file mode 100644
++index 0000000..4155197
++--- /dev/null
+++++ b/hREADME.md
++@@ -0,0 +1,8 @@
+++# HelloWorld
+++This is the first repository for me, just for try.
+++
+++These words were written in readme-edits branch.
+++
+++Try again. July 2.
+++
+++Ha ha!
++diff --git a/hfile1 b/hfile1
++new file mode 100644
++index 0000000..8b13789
++--- /dev/null
+++++ b/hfile1
++@@ -0,0 +1 @@
+++
++diff --git a/hfile2 b/hfile2
++new file mode 100644
++index 0000000..9f87a09
++--- /dev/null
+++++ b/hfile2
++@@ -0,0 +1 @@
+++wqj
++diff --git a/hfile3 b/hfile3
++new file mode 100644
++index 0000000..8b13789
++--- /dev/null
+++++ b/hfile3
++@@ -0,0 +1 @@
+++
++diff --git a/hfs/file6 b/hfs/file6
++new file mode 100644
++index 0000000..9f87a09
++--- /dev/null
+++++ b/hfs/file6
++@@ -0,0 +1 @@
+++wqj
++diff --git a/hfs/h.tar.gz b/hfs/h.tar.gz
++new file mode 100644
++index 0000000..e69de29
++-- 
++2.19.1
++
+diff --git a/0008-.patch b/0008-.patch
+new file mode 100644
+index 0000000..5a8d684
+--- /dev/null
++++ b/0008-.patch
+@@ -0,0 +1,21 @@
++From c6f3b8438acd3672320f18906e54bca18c0ca2c9 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 11 Jul 2019 17:16:48 +0800
++Subject: [PATCH 08/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E5=88=A0=E9=99=A4=EF=BC=9A=20?=
++ =?UTF-8?q?=20=20=20=20file8?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file8 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ delete mode 100644 file8
++
++diff --git a/file8 b/file8
++deleted file mode 100644
++index e69de29..0000000
++-- 
++2.19.1
++
+diff --git a/0009-.patch b/0009-.patch
+new file mode 100644
+index 0000000..f345f06
+--- /dev/null
++++ b/0009-.patch
+@@ -0,0 +1,21 @@
++From 27217293ab3299342f9518c931863636e08061a8 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 11 Jul 2019 17:17:58 +0800
++Subject: [PATCH 09/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6?=
++ =?UTF-8?q?=EF=BC=9A=20=20=20file8?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file8 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ create mode 100644 file8
++
++diff --git a/file8 b/file8
++new file mode 100644
++index 0000000..e69de29
++-- 
++2.19.1
++
+diff --git a/0010-.patch b/0010-.patch
+new file mode 100644
+index 0000000..d60b142
+--- /dev/null
++++ b/0010-.patch
+@@ -0,0 +1,21 @@
++From f66402f8503b664dde70f30c603fd6ce153e8bea Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 11 Jul 2019 17:20:51 +0800
++Subject: [PATCH 10/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6?=
++ =?UTF-8?q?=EF=BC=9A=20=20=20file9?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file9 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ create mode 100644 file9
++
++diff --git a/file9 b/file9
++new file mode 100644
++index 0000000..e69de29
++-- 
++2.19.1
++
+diff --git a/0011-.patch b/0011-.patch
+new file mode 100644
+index 0000000..de7b655
+--- /dev/null
++++ b/0011-.patch
+@@ -0,0 +1,23 @@
++From c61c349290ce91a0ceac4912dd8bd54a1693ec6b Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Thu, 11 Jul 2019 17:40:58 +0800
++Subject: [PATCH 11/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20?=
++ =?UTF-8?q?=20=20=20=20file8?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file8 | 1 +
++ 1 file changed, 1 insertion(+)
++
++diff --git a/file8 b/file8
++index e69de29..20fd283 100644
++--- a/file8
+++++ b/file8
++@@ -0,0 +1 @@
+++in newbranch .. hihi
++-- 
++2.19.1
++
+diff --git a/0012-.patch b/0012-.patch
+new file mode 100644
+index 0000000..0912960
+--- /dev/null
++++ b/0012-.patch
+@@ -0,0 +1,25 @@
++From 9da6d49ee85d05ca75a37aa681b7520903b7b640 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 10:46:04 +0800
++Subject: [PATCH 12/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E6=96=B0=E6=96=87=E4=BB=B6?=
++ =?UTF-8?q?=EF=BC=9A=20=20=20mmess/file9?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ mmess/file9 | 1 +
++ 1 file changed, 1 insertion(+)
++ create mode 100644 mmess/file9
++
++diff --git a/mmess/file9 b/mmess/file9
++new file mode 100644
++index 0000000..52aa77e
++--- /dev/null
+++++ b/mmess/file9
++@@ -0,0 +1 @@
+++messsss
++-- 
++2.19.1
++
+diff --git a/0013-Revert.patch b/0013-Revert.patch
+new file mode 100644
+index 0000000..680cc43
+--- /dev/null
++++ b/0013-Revert.patch
+@@ -0,0 +1,28 @@
++From dc69dfb8d7ce628f7e99abb7313ed6db29d3f2a8 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 10:53:44 +0800
++Subject: [PATCH 13/20] =?UTF-8?q?Revert=20"=20=E8=A6=81=E6=8F=90=E4=BA=A4?=
++ =?UTF-8?q?=E7=9A=84=E5=8F=98=E6=9B=B4=EF=BC=9A"?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++This reverts commit 9da6d49ee85d05ca75a37aa681b7520903b7b640.
++
++ 要提交的变更：
++	删除：     mmess/file9
++---
++ mmess/file9 | 1 -
++ 1 file changed, 1 deletion(-)
++ delete mode 100644 mmess/file9
++
++diff --git a/mmess/file9 b/mmess/file9
++deleted file mode 100644
++index 52aa77e..0000000
++--- a/mmess/file9
+++++ /dev/null
++@@ -1 +0,0 @@
++-messsss
++-- 
++2.19.1
++
+diff --git a/0014-.patch b/0014-.patch
+new file mode 100644
+index 0000000..5c9534c
+--- /dev/null
++++ b/0014-.patch
+@@ -0,0 +1,22 @@
++From 7c0ec4b59754d5488bf31942dc6a294182c770e5 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 10:54:47 +0800
++Subject: [PATCH 14/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E9=87=8D=E5=91=BD=E5=90=8D?=
++ =?UTF-8?q?=EF=BC=9A=20=20=20file8=20->=20mmess/file8?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file8 => mmess/file8 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ rename file8 => mmess/file8 (100%)
++
++diff --git a/file8 b/mmess/file8
++similarity index 100%
++rename from file8
++rename to mmess/file8
++-- 
++2.19.1
++
+diff --git a/0015-Revert.patch b/0015-Revert.patch
+new file mode 100644
+index 0000000..8b94be5
+--- /dev/null
++++ b/0015-Revert.patch
+@@ -0,0 +1,25 @@
++From 0705d8bba0dc7904c0e325c70444378dc42fc226 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 10:55:07 +0800
++Subject: [PATCH 15/20] =?UTF-8?q?Revert=20"=20=E8=A6=81=E6=8F=90=E4=BA=A4?=
++ =?UTF-8?q?=E7=9A=84=E5=8F=98=E6=9B=B4=EF=BC=9A"?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++This reverts commit 7c0ec4b59754d5488bf31942dc6a294182c770e5.
++
++ 要提交的变更：
++	重命名：   mmess/file8 -> file8
++---
++ mmess/file8 => file8 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ rename mmess/file8 => file8 (100%)
++
++diff --git a/mmess/file8 b/file8
++similarity index 100%
++rename from mmess/file8
++rename to file8
++-- 
++2.19.1
++
+diff --git a/0016-Revert-Revert.patch b/0016-Revert-Revert.patch
+new file mode 100644
+index 0000000..cd4e24a
+--- /dev/null
++++ b/0016-Revert-Revert.patch
+@@ -0,0 +1,27 @@
++From 604e89a69627373a880b9a4be77afef24908abf2 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 10:58:03 +0800
++Subject: [PATCH 16/20] =?UTF-8?q?Revert=20"Revert=20"=20=E8=A6=81=E6=8F=90?=
++ =?UTF-8?q?=E4=BA=A4=E7=9A=84=E5=8F=98=E6=9B=B4=EF=BC=9A""?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++This reverts commit 0705d8bba0dc7904c0e325c70444378dc42fc226.
++
++ 要提交的变更：
++	重命名：   file8 -> mmess/file8
++
++	重命名：   file8 -> mmess/file8
++---
++ file8 => mmess/file8 | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ rename file8 => mmess/file8 (100%)
++
++diff --git a/file8 b/mmess/file8
++similarity index 100%
++rename from file8
++rename to mmess/file8
++-- 
++2.19.1
++
+diff --git a/0017-.patch b/0017-.patch
+new file mode 100644
+index 0000000..1f7f66d
+--- /dev/null
++++ b/0017-.patch
+@@ -0,0 +1,25 @@
++From d8844d5368835da14865c1be793ae42692602599 Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 11:10:55 +0800
++Subject: [PATCH 17/20] =?UTF-8?q?=20=E5=B0=9A=E6=9C=AA=E6=9A=82=E5=AD=98?=
++ =?UTF-8?q?=E4=BB=A5=E5=A4=87=E6=8F=90=E4=BA=A4=E7=9A=84=E5=8F=98=E6=9B=B4?=
++ =?UTF-8?q?=EF=BC=9A=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20=20=20=20=20file8?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file8 | 1 +
++ 1 file changed, 1 insertion(+)
++ create mode 100644 file8
++
++diff --git a/file8 b/file8
++new file mode 100644
++index 0000000..20fd283
++--- /dev/null
+++++ b/file8
++@@ -0,0 +1 @@
+++in newbranch .. hihi
++-- 
++2.19.1
++
+diff --git a/0018-adding-file-staFile.patch b/0018-adding-file-staFile.patch
+new file mode 100644
+index 0000000..b90a4be
+--- /dev/null
++++ b/0018-adding-file-staFile.patch
+@@ -0,0 +1,16 @@
++From df5b8b48185af134e7ce92fb7fe071390c87900b Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 15:22:19 +0800
++Subject: [PATCH 18/20] adding file staFile
++
++---
++ staFile | 0
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ create mode 100644 staFile
++
++diff --git a/staFile b/staFile
++new file mode 100644
++index 0000000..e69de29
++-- 
++2.19.1
++
+diff --git a/0019-Just-fix-another-bug.patch b/0019-Just-fix-another-bug.patch
+new file mode 100644
+index 0000000..cf203b5
+--- /dev/null
++++ b/0019-Just-fix-another-bug.patch
+@@ -0,0 +1,19 @@
++From c9067525b06b216873191c8184a755efc9f3b04e Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 15:30:24 +0800
++Subject: [PATCH 19/20] Just fix another bug
++
++---
++ file8 | 1 +
++ 1 file changed, 1 insertion(+)
++
++diff --git a/file8 b/file8
++index 20fd283..e7c1461 100644
++--- a/file8
+++++ b/file8
++@@ -1 +1,2 @@
++ in newbranch .. hihi
+++This is a bad idea.
++-- 
++2.19.1
++
+diff --git a/0020-.patch b/0020-.patch
+new file mode 100644
+index 0000000..cb14fcb
+--- /dev/null
++++ b/0020-.patch
+@@ -0,0 +1,28 @@
++From 6c9ebd19db116eedc7b08088ae53055ebfda212f Mon Sep 17 00:00:00 2001
++From: wangqingjiang-ncwu <wangqingjiang@ncwu.edu.cn>
++Date: Fri, 12 Jul 2019 16:56:44 +0800
++Subject: [PATCH 20/20] =?UTF-8?q?=20=E8=A6=81=E6=8F=90=E4=BA=A4=E7=9A=84?=
++ =?UTF-8?q?=E5=8F=98=E6=9B=B4=EF=BC=9A=20=09=E4=BF=AE=E6=94=B9=EF=BC=9A=20?=
++ =?UTF-8?q?=20=20=20=20file8?=
++MIME-Version: 1.0
++Content-Type: text/plain; charset=UTF-8
++Content-Transfer-Encoding: 8bit
++
++---
++ file8 | 4 ++++
++ 1 file changed, 4 insertions(+)
++
++diff --git a/file8 b/file8
++index e7c1461..cb6f44c 100644
++--- a/file8
+++++ b/file8
++@@ -1,2 +1,6 @@
++ in newbranch .. hihi
++ This is a bad idea.
+++
+++asdadad
+++
+++a bug
++-- 
++2.19.1
++
+-- 
+2.19.1
+
